@@ -9,7 +9,10 @@ AvaTax reduces the audit risk to a company by providing a cloud-based
 sales tax service that makes it simple to do rate calculations, while managing
 exemption certificates, filing forms and remitting payments.
 
-The module supports two modes; i) Basic ii) Pro
+The module supports two modes; 
+
+1. Basic
+2. Pro
 
 The AvaTax Basic service provides limited use of the AvaTax sales tax codes, in
 particular P0000000 for Personal Taxable goods, a Shipping tax code and NT for
@@ -27,6 +30,7 @@ Access to a fully functional development account can be requested by contacting
 Avalara, Inc.
 
 AvaTax Development service: https://admin-development.avalara.net
+
 AvaTax Production service: https://admin-avatax.avalara.net  
 
 Version 1.15.R of the module is compatible with Zen Cart 1.5.1 
