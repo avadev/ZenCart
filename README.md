@@ -1,6 +1,3 @@
-ZenCart-1.51
-============
-
 INTRODUCTION
 ============
 The Zen Cart Connector for AvaTax is a Zen Cart compliant module that
