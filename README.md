@@ -37,8 +37,8 @@ Version 1.15.R of the module is compatible with Zen Cart 1.5.1
 
 REQUIREMENTS
 ============
-a) The service uses the AvaTax REST api for processing transactions.
-b) The server needs to support cURL
+1. The service uses the AvaTax REST api for processing transactions.
+2. The server needs to support cURL
 
 
 INSTALLATION
@@ -210,6 +210,7 @@ Update the following one osCommerce files
 File: orders.php - NB - instance in yoursite/admin/orders.php
 
 Insert the following 9 lines of code after: 
+```
 if ($status < 1) break;
 
   require_once DIR_WS_MODULES . 'avatax/erp.avatax.php';
@@ -221,12 +222,14 @@ if ($status < 1) break;
   if ($status == $avatax_delivered) { 
     zc_avatax_commit_transaction($oID);
   } 
-
+```
 Insert the following 2 lines of code after: 
+```
 zen_remove_order($oID, $_POST['restock']);
 
   require_once DIR_WS_MODULES . 'avatax/erp.avatax.php';
   zc_avatax_cancel_transaction($oID);
+```
 
 Operations
 ----------
@@ -276,7 +279,9 @@ generated if the address fields are populated with invalid data by the user.
 The following address will generate an error:
 
 Street: Nowhere Street
+
 City: Nowhere City
+
 Zip: 99999
 
 AvaTax error: JurisdictionNotFoundError:
